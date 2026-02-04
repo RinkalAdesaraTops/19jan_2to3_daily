@@ -1,0 +1,24 @@
+p {
+    color: cadetblue;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-variant: small-caps;
+}
+#abc {
+    color: darkblue;
+    font-family: "Playwrite IN Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+/* custom fonts */
+@font-face {
+    font-family: "abc123";
+    src: url(Bungee-Regular.ttf);
+}
+.txt{
+    color:chocolate;
+    font-family: abc123;
+    font-size: 35px;
+}
