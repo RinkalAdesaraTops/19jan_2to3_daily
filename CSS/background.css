@@ -1,0 +1,19 @@
+.box{
+    height: 500px;
+    width: 500px;
+    padding:30px;
+    border: 30px dotted black;
+    /* background-image: url('flr.png'),url('flower.gif');
+    background-repeat:  repeat repeat; */
+    background-image: url('flr.png');
+    /* background-clip: content-box; */
+    background-attachment: fixed;
+    /* repeat no-repeat repeat-x repeat-y */
+    /* background-repeat: no-repeat; */
+    /* background-position: 10px 60px; */
+    /* background-position: center; */
+    /* background-size: contain; */
+    /* border: 3px dotted black; */
+    /* border: 3px dashed black; */
+    /* border: 3px double black; */
+}
