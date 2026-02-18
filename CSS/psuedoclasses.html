@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        height: 300px;
+        width: 500px;
+        border: 1px solid black;
+    }
+    p::before{
+      content: "\00A9";  
+    }
+    p::after{
+        content: "\00A5";
+    }
+    p::first-letter{
+        color:red;
+        font-size:28px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p::first-line{
+        color:blueviolet;
+        font-size:25px;
+        font-weight: 500;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quidem necessitatibus explicabo assumenda sed ex doloremque. Ea assumenda cumque officiis consectetur, officia repudiandae sunt. Quia sapiente odit quo suscipit ratione?
+        </p>
+    </div>
+</body>
+</html>

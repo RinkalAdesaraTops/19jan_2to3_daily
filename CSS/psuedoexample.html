@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn1{
+            background-color: red;
+            color:antiquewhite;            
+        }
+        /* #btn1:hover{
+            background-color: gold;
+            color:black;
+            border-radius: 50%;
+        } */
+        #username:focus{
+            background-color: brown;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color:cadetblue;
+        }
+       input[type="radio"]:checked {
+            outline: 1px solid green;
+        }
+        #txt{
+            color: brown;
+            display: none;
+        }
+        .main:hover  #txt{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- psuedo Classes == :hover :focus :visited :checked
+    Elements == ::before ::after ::first-letter ::first-line -->
+<input type="text" name="username" id="username">
+<div class="main">
+    <span id="txt">Hello....</span>
+    <button id="btn1">Add</button>
+</div>
+<br><br>
+<a href="chessboard.html">Home</a>
+<a href="position.html">Signup</a>
+<a href="#">ABout Us</a>
+<br><br>
+<input type="radio" name="g1" id="g1">Male
+<input type="radio" name="g1" id="g2">Female
+</body>
+</html>
