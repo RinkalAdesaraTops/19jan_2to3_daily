@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 200px 50px;
+            background-color: aqua;
+            
+        }
+        .box > div{
+            background-color: rgb(33, 19, 182);
+            padding: 10px;
+            margin:10px;
+            color: white;
+
+        }
+        #b1{
+            grid-column-start:2;
+            /* grid-column : c-start / c-end */
+            /* grid-column : 2 / span 2 */
+        }
+        #b2{
+            grid-column-end: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="b1" id="b1">1</div>
+        <div class="b1">2</div>
+        <div class="b1" id="b2">3</div>
+        <div class="b1">4</div>
+    </div>
+</body>
+
+</html>
