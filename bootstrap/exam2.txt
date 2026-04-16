@@ -1,0 +1,15 @@
+what is html?
+what is css?
+Types of list tag?
+explain img tag
+what is CPBM?
+explain audio,video tag
+what is similar tag of Italic <i> tag?
+How many types of heading tag
+what is use of iframe tag
+how many background property
+how many types of css
+explain selectors?
+what is meaning of padding:10px 5px 3px; 
+explain table tag?
+explain input tag & its properties
