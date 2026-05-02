@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i=1
+        // Either condition is wrong or right code will be executed once.
+        do{ //exit controlled loop
+            document.write('<br>'+i) //1
+            i++ //2
+        } while(i<=5) //2<=0
+
+        // for loop 
+        // for(initialization,condition,increment,decrement)
+        for(let j=11,i=100;j<=15;j+=1,i-=2){ //entry controlled loop
+            document.write('<br>'+j)
+            document.write('<br> i is '+i)
+        }
+
+    </script>
+</body>
+</html>
