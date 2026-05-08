@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // user defined function
+        //1)TNRN - take nothing return nothing
+        function add(){
+            let a=10
+            let b=20
+            document.write('<br>Addition is '+(a+b))
+        }
+        function minus(){
+            let a=10
+            let b=20
+            document.write('<br>Addition is '+(a-b))
+        }
+        //2)TSRN = take something return nothing       
+        function mult(x,y){
+            document.write('<br>Multiplication is '+(x*y))
+        }
+        //3)TNRS - take nothing return something
+        function area(){
+            const pi=3.14
+            let r=2.5
+            return pi*r**2
+        }
+        // 4)TSRS - take something return something
+        function cube(a){
+            return a**3 //a*a*a
+        }
+        // let p=prompt("Enter value1:") //45
+        // let q=prompt("Enter value2:") //20
+        // function calling
+        add()
+        minus()       
+        // mult(p,q)
+        // mult(25,10)
+        // document.write('<br>Area of circle is '+area())
+        let ans = area()
+        document.write('<br>Area of circle is '+ans)
+        document.write('<br>Cube is '+cube(5))
+    </script>
+</body>
+</html>
