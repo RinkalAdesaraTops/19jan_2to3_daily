@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // arrow function
+        let add = () => {
+            let a = 10
+            let b = 20
+            document.write('<br>Addition is ' + (a + b))
+        }
+        let a = 10
+        let b = 20
+        // fat arrow function 
+        const minus = () => document.write('<br>Addition is ' + (a - b))
+          
+        var mult = (x, y)=> document.write('<br>Multiplication is ' + (x * y))
+        const pi = 3.14
+        let r = 2.5
+        const area = ()=> pi * r ** 2
+        
+        let cube = a => a ** 3
+        
+        add()
+        minus()
+        // mult(p,q)
+        // mult(25,10)
+        // document.write('<br>Area of circle is '+area())
+        let ans = area()
+        document.write('<br>Area of circle is ' + ans)
+        document.write('<br>Cube is ' + cube(5))
+    </script>
+</body>
+
+</html>

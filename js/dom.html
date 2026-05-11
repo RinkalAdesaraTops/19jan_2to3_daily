@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <select name="" id=""></select>
+    <div id="demo"></div>
+    <p class="abc">hiii</p>
+    <p class="abc">Hello</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed mollitia dolorum quos alias consequuntur et maxime facere, blanditiis non ipsa praesentium impedit in eos eius aspernatur totam expedita enim dicta.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus animi molestias nihil illo ducimus earum quia error quae. Laborum sunt beatae facilis earum non? Harum voluptatum veritatis odit facilis. Facilis labore mollitia magni minima iste corrupti enim earum, nam, aspernatur quae repudiandae voluptatibus iusto delectus distinctio placeat </p>
+    <p class="abc">laboriosam impedit. Reiciendis animi quaerat voluptates architecto, perferendis hic possimus blanditiis libero reprehenderit officiis maiores voluptas neque! Velit culpa sunt assumenda excepturi est eveniet in alias perferendis, non tempore, inventore sed ex minus facere placeat numquam architecto fugiat illo id autem. Debitis tempore dolor aliquid velit quisquam accusantium assumenda corporis doloremque eos aut.</p>
+    <!-- <div id="demo1"></div> -->
+    <script>
+        // DOM = document object model
+        document.getElementById('demo').innerHTML = "<b>Hello</b>"
+        document.getElementById('demo').style.color = "yellow"
+        document.getElementById('demo').style.backgroundColor = "yellowgreen"
+        document.getElementById('demo').style.fontSize = "20px"
+        document.getElementById('demo').style.fontFamily = "Arial Black"
+        // document.getElementById('demo1').innerText = "<b>Hello</b>"
+        // let a = document.getElementsByTagName("p")
+        let a = document.getElementsByClassName("abc")
+        // getElementsByName
+        console.log(a);
+        for(let i=0;i<a.length;i++){
+            if(i%2==0){
+                a[i].style.color="blue"     
+            } else {
+                a[i].style.color="purple"
+            }
+        }
+        // a[0].style.color="blue"
+        // a[1].style.color="blue"
+    </script>
+</body>
+</html>
