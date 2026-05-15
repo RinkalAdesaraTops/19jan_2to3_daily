@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Local Storage Example</h3>
+    <div id="txt"></div>
+    <button onclick="rmAge()">Delete Age</button>
+    <button onclick="rmAll()">Delete All</button>
+    <script>
+        const rmAge = ()=>{
+            localStorage.removeItem("age")
+        }
+        const rmAll = ()=>{
+            localStorage.clear()
+        }
+        // localStorage.setItem("name","abcd")
+        // localStorage.setItem("age",25)
+        // localStorage.setItem("salary",35000)
+        let a= localStorage.getItem("name")
+        document.getElementById('txt').innerHTML = "Name is "+a
+        
+    </script>
+</body>
+</html>

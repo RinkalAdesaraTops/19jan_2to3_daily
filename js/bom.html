@@ -8,12 +8,41 @@
 <body>
     <div id="demo">Hii</div>
     <div id="demo1"></div>
+    <hr>
+    <div>
+        <span id="hours">00</span>:
+        <span id="min">00</span>:
+        <span id="sec">00</span>
+    </div>
     <script>
-        
+        // setInterval
+        let s = 1
+        let m=1
+        let h=1
+        setInterval(()=>{
+            document.getElementById('sec').innerHTML =s++ 
+            if(s>10){
+                document.getElementById('min').innerHTML = m++ 
+                s=1
+
+            }
+            if(m>5){
+                document.getElementById('hours').innerHTML = h++
+                m=1
+                
+            }
+
+        },1000)
+        const add= ()=>{
+            let a=45
+            let b=20
+            return a+b
+        }
         // browser object model
         // setTimeout & setInterval function
         setTimeout(()=>{
             document.getElementById('demo').innerHTML = "Hello"
+            document.getElementById('demo1').innerHTML = "Addition is "+add()
         },2000)
     </script>
 </body>
