@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object oriented programming
+        // 4-Principal
+        // 1)class & object
+        // 2)Inheritance
+        // 3)POlymorphism
+        // 4) Data abstraction & encapsulation
+        class abc{
+            // default constructor
+            // constructor(){ //special member function bcoz it is automatically called when object is created
+            //     this.a = 10
+            //     this.b = 20
+            // }
+            // Parameterized constructor
+            constructor(x,y){
+                this.a = x
+                this.b = y
+            }
+            add = ()=>{ //normal function
+                document.write('<br>Addition is '+(this.a + this.b))
+            }
+        }
+        // let a1 = new abc()
+        let a1 = new abc(25,10)
+        a1.add()
+    </script>
+</body>
+</html>

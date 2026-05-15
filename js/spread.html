@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ... spread operator
+        let arr = [10,20,30,40,55]
+        let arr1 = [100,200,300]
+        let merge_arr = [...arr,...arr1]
+        document.write('<br>'+merge_arr)
+
+        // Array Destructuring
+        // const [a,b,c,d,e] = arr
+        // ... rest operator = remaining element
+        const [a,b,...c] = arr
+        document.write('<br>'+a)
+        document.write('<br>'+b)
+        document.write('<br>'+c)
+        // arr[0]
+        // loop
+        // object destructuring
+        let obj = {
+            name:"abc",
+            age:26,
+            salary:45000
+        }
+        let {name,salary} = obj
+        // document.write('<br>NaME IS '+obj.name)
+        document.write('<br>NaME IS '+name)
+        document.write('<br>Salary IS '+salary)
+    </script>
+</body>
+</html>
